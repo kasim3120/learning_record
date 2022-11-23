@@ -25,13 +25,13 @@ Mongoose。
 Express.js。
 
 RESTful API 架構：
-GET api/study
-GET api/study/:id
-GET api/study?title=[title]
-POST api/study
-PATCH api/study/:id
-DELETE api/study/:id
-DELETE api/study
+- GET api/study
+- GET api/study/:id
+- GET api/study?title=[title]
+- POST api/study
+- PATCH api/study/:id
+- DELETE api/study/:id
+- DELETE api/study
 
 前端-
 React。
