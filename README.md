@@ -7,7 +7,7 @@
 server.ts：Express web server，CORS、initialize、Express RESTful API。
 
 /config/
-db.config.js export MongoDB connect Mongoose configure。
+db.config.js：export MongoDB connect Mongoose configure。
 
 /controllers/
 study.controller.ts
@@ -20,19 +20,19 @@ index.ts：MongoDB Database configure。
 study.model.ts：Mongoose Data model。
 
 後端-
-MongoDB。
-Mongoose。
-Express.js。
+- MongoDB。
+- Mongoose。
+- Express.js。
 
 RESTful API 架構：
-GET api/study
-GET api/study/:id
-GET api/study?title=[title]
-POST api/study
-PATCH api/study/:id
-DELETE api/study/:id
-DELETE api/study
+- GET api/study
+- GET api/study/:id
+- GET api/study?title=[title]
+- POST api/study
+- PATCH api/study/:id
+- DELETE api/study/:id
+- DELETE api/study
 
 前端-
-React。
-axios。
+- React。
+- axios。
