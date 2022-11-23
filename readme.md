@@ -25,7 +25,7 @@ Mongoose。
 Express.js。
 
 RESTful API 架構：
-GET api/study /n
+GET api/study
 GET api/study/:id
 GET api/study?title=[title]
 POST api/study
