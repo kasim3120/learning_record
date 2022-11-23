@@ -20,9 +20,9 @@ index.ts：MongoDB Database configure。
 study.model.ts：Mongoose Data model。
 
 後端-
--MongoDB。
--Mongoose。
--Express.js。
+- MongoDB。
+- Mongoose。
+- Express.js。
 
 RESTful API 架構：
 - GET api/study
@@ -34,5 +34,5 @@ RESTful API 架構：
 - DELETE api/study
 
 前端-
--React。
--axios。
+- React。
+- axios。
