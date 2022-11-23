@@ -38,7 +38,7 @@ db.mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    console.log("Connected to the mongodb://0.0.0.0:27017/");
+    console.log("Connected to the database");
   })
   .catch(err => {
     console.log("Cannot connect to the database!");
