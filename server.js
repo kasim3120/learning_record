@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import db from './app/models/index.js'
+import db from './app/models/index.js';
+import studyRouter from "./app/routes/study.routes.js"
 
 const app = express();
 
@@ -17,10 +18,12 @@ app.use(bodyParser.json());
 //parse require of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
 //simple route
 app.get("/", (request, response) => {
   response.json({ Message: "Welcome to application." });
 });
+app.use('/api/study/', studyRouter)
 
 //set port, listen for requests
 const PORT = process.env.PORT || 8080;
@@ -29,15 +32,16 @@ app.listen(PORT, () => {
 });
 
 
-
-db.mongoose.connect(db.url, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+db.mongoose
+  .connect(db.url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
   .then(() => {
-    console.log("Connected to the database!");
+    console.log("Connected to the mongodb://0.0.0.0:27017/");
   })
   .catch(err => {
     console.log("Cannot connect to the database!");
     process.exit();
   });
+

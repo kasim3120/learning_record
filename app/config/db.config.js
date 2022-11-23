@@ -1,3 +1,3 @@
-const url = "mongodb://localhost:27017/kasim780601_db";
+const url = "mongodb://0.0.0.0:27017/";
 
 export default url;
