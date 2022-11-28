@@ -30,10 +30,10 @@ const createData = (request, response) => {
 
 
 
-// Create and Save a new Tutorial
+// Create and Save a new study
 
 
-// // Retrieve all Tutorials from the database.
+// // Retrieve all study from the database.
 const findAllData = (request, response) => {
   const title = request.query.title;
   const condition = title ? {
@@ -51,7 +51,7 @@ const findAllData = (request, response) => {
     })
 };
 
-// // Find a single Tutorial with an id
+// // Find a single study with an id
 const findOneData = (request, response) => {
   const id = request.params.id;
 
@@ -64,7 +64,7 @@ const findOneData = (request, response) => {
     });
 };
 
-// // Update a Tutorial by the id in the request
+// // Update a study by the id in the request
 const updateData = (request, response) => {
   if (!request.body) {
     return response.status(400).send({
@@ -92,7 +92,7 @@ const updateData = (request, response) => {
     });
 };
 
-// // Delete a Tutorial with the specified id in the request
+// // Delete a study with the specified id in the request
 const deleteData = (request, response) => {
   const id = request.params.id;
 
@@ -116,7 +116,7 @@ const deleteData = (request, response) => {
     });
 };
 
-// // Delete all Tutorials from the database.
+// // Delete all study from the database.
 const deleteAllData = (request, response) => {
   Study.deleteMany({})
     .then(data => {
@@ -131,7 +131,7 @@ const deleteAllData = (request, response) => {
     });
 };
 
-// // Find all published Tutorials
+// // Find all published study
 const findAllPublished = (request, response) => {
   Study.find({ published: true })
     .then(data => {
