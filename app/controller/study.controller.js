@@ -7,7 +7,7 @@ const createData = (request, response) => {
     response.status(400).send({ message: "Content can not be empty!" });
     return;
   }
-  //Create a Study
+  //Create and save a new Study
   const study = new Study(
     {
       title: request.body.title,
@@ -30,7 +30,7 @@ const createData = (request, response) => {
 
 
 
-// Create and Save a new study
+
 
 
 // // Retrieve all study from the database.
